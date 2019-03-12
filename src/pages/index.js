@@ -7,6 +7,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Content from '../components/content';
 import '../styles/index.scss';
+import { Anchor } from '../components/common/anchor';
 
 const NoWrap = p => <span style={{ whiteSpace: 'nowrap' }}>{p.children}</span>;
 
@@ -42,7 +43,10 @@ const IndexPage = () => (
             Mobile sensors, Artificial intelligence, Cloud automation, Machine
             learning, Neural networks, and more.
           </p>
-          <p>Learn more about Lumini Research: info@lumini.me</p>
+          <p>
+            Learn more about Lumini Research:{' '}
+            <Anchor href="mailto:info@lumini.me">info@lumini.me</Anchor>
+          </p>
         </div>
       </article>
     </Content>
