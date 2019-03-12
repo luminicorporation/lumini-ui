@@ -45,7 +45,7 @@ const IndexPage = () => (
           </p>
           <p>
             Learn more about Lumini Research:{' '}
-            <Anchor href="mailto:info@lumini.me">info@lumini.me</Anchor>
+            <Anchor href="mailto:info@lumini.me">info@lumini.me</Anchor>.
           </p>
         </div>
       </article>
