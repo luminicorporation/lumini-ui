@@ -7,6 +7,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Content from '../components/content';
 import '../styles/index.scss';
+import { Anchor } from '../components/common/anchor';
 
 const NoWrap = p => <span style={{ whiteSpace: 'nowrap' }}>{p.children}</span>;
 
@@ -24,15 +25,29 @@ const IndexPage = () => (
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
         `}
       >
         <GreaterThanCaret />
-        <p className="paragraph">
-          Theoretical science research for advanced technologies. We are
-          developing foundational technologies, applying new thinking for{' '}
-          <NoWrap>near-future</NoWrap> applications.
-        </p>
+        <div className="paragraph">
+          <p>
+            <strong>Lumini Research</strong>
+          </p>
+          <p>
+            Theoretical science research for advanced computing. We are
+            developing foundational technologies, applying new thinking for{' '}
+            <NoWrap>near-future</NoWrap> applications.
+          </p>
+          <p>
+            Advancing key research areas: Mobile computing, Camera computing,
+            Mobile sensors, Artificial intelligence, Cloud automation, Machine
+            learning, Neural networks, and more.
+          </p>
+          <p>
+            Learn more about Lumini Research:{' '}
+            <Anchor href="mailto:info@lumini.me">info@lumini.me</Anchor>.
+          </p>
+        </div>
       </article>
     </Content>
   </Layout>
