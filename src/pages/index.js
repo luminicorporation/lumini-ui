@@ -14,7 +14,7 @@ const NoWrap = p => <span style={{ whiteSpace: 'nowrap' }}>{p.children}</span>;
 const IndexPage = () => (
   <Layout>
     <Content>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Home" keywords={[`theoretical`, `science`, `research`]} />
       <h1 className="neotech-med title">
         Lumini
         <br /> Corporation
