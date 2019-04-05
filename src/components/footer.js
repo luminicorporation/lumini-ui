@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 import Content from './content';
 import { useResizeEvent } from '../hooks/useResizeEvent';
 import { List, Item } from './common/horizontalList';
-import { Anchor } from './common/anchor';
+import { ExternalAnchor } from './common/anchor';
 import '../styles/footer.scss';
 
 const fixedStyles = css`
@@ -41,9 +41,9 @@ const Footer = () => {
             <Item>© {new Date().getFullYear()} Lumini Corporation Inc.</Item>
             <Item className="hide-on-mobile">California, United States.</Item>
             <Item>
-              <Anchor href="mailto:nils@adtile.me?subject=Inquiries to Lumini Research">
+              <ExternalAnchor href="mailto:nils@adtile.me?subject=Inquiries to Lumini Research">
                 research@lumini.me
-              </Anchor>
+              </ExternalAnchor>
             </Item>
           </List>
         </article>

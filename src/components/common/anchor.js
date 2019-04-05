@@ -11,7 +11,7 @@ export const Anchor = ({ children, className, ...props }) => (
 
 export const ExternalAnchor = ({ children, className, ...props }) => (
   <Anchor
-    className={cx('anchor--external', className)}
+    className={cx('anchor anchor--external', className)}
     {...props}
     target="_blank"
     rel="noopener noreferrer"
