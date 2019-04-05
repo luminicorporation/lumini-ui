@@ -7,7 +7,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Content from '../components/content';
 import '../styles/index.scss';
-import { Anchor } from '../components/common/anchor';
+import { ExternalAnchor } from '../components/common/anchor';
 
 const NoWrap = p => <span style={{ whiteSpace: 'nowrap' }}>{p.children}</span>;
 
@@ -45,7 +45,10 @@ const IndexPage = () => (
           </p>
           <p>
             Learn more about Lumini Research:{' '}
-            <Anchor href="mailto:info@lumini.me">info@lumini.me</Anchor>.
+            <ExternalAnchor href="mailto:nils@adtile.me?subject=Inquiries to Lumini Research">
+              research@lumini.me
+            </ExternalAnchor>
+            .
           </p>
         </div>
       </article>
