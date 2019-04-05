@@ -41,7 +41,9 @@ const Footer = () => {
             <Item>© {new Date().getFullYear()} Lumini Corporation Inc.</Item>
             <Item className="hide-on-mobile">California, United States.</Item>
             <Item>
-              <Anchor href="mailto:info@lumini.me">info@lumini.me</Anchor>
+              <Anchor href="mailto:nils@adtile.me?subject=Inquiries to Lumini Research">
+                research@lumini.me
+              </Anchor>
             </Item>
           </List>
         </article>
