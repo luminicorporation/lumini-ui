@@ -50,6 +50,7 @@ const IndexPage = () => (
             </ExternalAnchor>
             .
           </p>
+          <p>A Nils Forsblom Research Company.</p>
         </div>
       </article>
     </Content>
