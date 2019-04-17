@@ -8,7 +8,7 @@ import SEO from '../components/seo';
 import Content from '../components/content';
 import { ExternalAnchor } from '../components/common/anchor';
 import { PatentsQuery } from '../queries/PatentsQuery';
-import '../styles/index.scss';
+import '../styles/license.scss';
 
 const NoWrap = p => <span style={{ whiteSpace: 'nowrap' }}>{p.children}</span>;
 
@@ -43,8 +43,8 @@ const LicensePage = () => (
         <div className="paragraph">
           <PatentsQuery
             render={data => (
-              <>
-                <b>Protected by U.S. Patents</b>:
+              <p className="patent-ids">
+                <b>Protected by U.S. Patents</b>:{' '}
                 {data.allPatentsJson.edges.map(({ node: patent }) => (
                   <>
                     <ExternalAnchor
@@ -54,10 +54,9 @@ const LicensePage = () => (
                     >
                       {patent.id}
                     </ExternalAnchor>
-                    ,{' '}
                   </>
                 ))}
-              </>
+              </p>
             )}
           />
         </div>
