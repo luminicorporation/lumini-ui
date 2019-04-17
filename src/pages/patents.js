@@ -11,8 +11,6 @@ import { PatentsQuery } from '../queries/PatentsQuery';
 import fbiAntiPiracyLogo from '../images/fbi-anti-piracy.png';
 import '../styles/license.scss';
 
-const NoWrap = p => <span style={{ whiteSpace: 'nowrap' }}>{p.children}</span>;
-
 const LicensePage = () => {
   const currentYear = new Date().getFullYear();
   const copyright = currentYear > 2019 ? `2019-${currentYear}` : '2019';
