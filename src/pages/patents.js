@@ -21,7 +21,7 @@ const LicensePage = () => {
     <Layout>
       <Content>
         <SEO
-          title="License"
+          title="Patents"
           keywords={[
             `lumini`,
             `patent`,
@@ -33,7 +33,7 @@ const LicensePage = () => {
           Lumini
           <br /> Corporation
           <br />
-          <small>License</small>
+          <small>Patents</small>
         </h1>
         <hr className="horizontal-separator" />
         <article
