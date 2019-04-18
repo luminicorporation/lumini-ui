@@ -9,7 +9,7 @@ import Content from '../components/content';
 import { ExternalAnchor } from '../components/common/anchor';
 import { PatentsQuery } from '../queries/PatentsQuery';
 import fbiAntiPiracyLogo from '../images/fbi-anti-piracy.png';
-import '../styles/license.scss';
+import '../styles/patents.scss';
 
 const LicensePage = () => {
   const currentYear = new Date().getFullYear();
@@ -50,13 +50,11 @@ const LicensePage = () => {
                   <p className="patent-ids">
                     <b>Protected by U.S. Patents</b>:{' '}
                     {data.allPatentsJson.edges.map(({ node: patent }) => (
-                      <ExternalAnchor
-                        key={patent.id}
-                        title={patent.name}
-                        href={patent.href}
-                      >
-                        {patent.id}
-                      </ExternalAnchor>
+                      <span key={patent.id}>
+                        <ExternalAnchor title={patent.name} href={patent.href}>
+                          {patent.id}
+                        </ExternalAnchor>
+                      </span>
                     ))}
                   </p>
                   <p>

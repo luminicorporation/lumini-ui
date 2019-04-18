@@ -2,7 +2,7 @@
 
 .patent-ids {
   // Add commas to ids
-  .anchor:not(:last-of-type)::after {
+  span:not(:last-of-type)::after {
     content: ', ';
   }
 }
