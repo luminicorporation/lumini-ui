@@ -1,4 +1,14 @@
 body {
-  background-image: url('../images/background.png');
-  background-size: cover;
+  &::before {
+    content: ' ';
+    position: fixed;
+    width: 110vw;
+    height: 110vh;
+    top: -5vh;
+    left: -5vw;
+    background-image: url('../images/background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -10;
+  }
 }
