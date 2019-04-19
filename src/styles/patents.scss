@@ -1,8 +1,0 @@
-@import 'index';
-
-.patent-ids {
-  // Add commas to ids
-  span:not(:last-of-type)::after {
-    content: ', ';
-  }
-}
