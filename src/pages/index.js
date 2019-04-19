@@ -6,8 +6,9 @@ import GreaterThanCaret from '../components/greaterThanCaret';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Content from '../components/content';
-import '../styles/index.scss';
 import { ExternalAnchor } from '../components/common/anchor';
+import { Patents } from '../components/patents';
+import '../styles/index.scss';
 
 const NoWrap = p => <span style={{ whiteSpace: 'nowrap' }}>{p.children}</span>;
 
@@ -51,6 +52,8 @@ const IndexPage = () => (
             .
           </p>
           <p>A Nils Forsblom Research Company.</p>
+          <hr className="horizontal-separator" />
+          <Patents />
         </div>
       </article>
     </Content>
