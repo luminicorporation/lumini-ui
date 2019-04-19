@@ -76,6 +76,21 @@ const IndexPage = () => (
       <hr className="horizontal-separator" />
       <ContentRight>
         <div className="paragraph">
+          <p>
+            <strong>
+              Additional patents may be pending in the U.S. and elsewhere.
+            </strong>
+          </p>
+          <p>
+            This page is provided to satisfy the virtual patent marking
+            provisions of various jurisdictions including the virtual patent
+            marking provisions of the America Invents Act.
+          </p>
+        </div>
+      </ContentRight>
+      <hr className="horizontal-separator" />
+      <ContentRight>
+        <div className="paragraph">
           <Patents />
         </div>
       </ContentRight>
