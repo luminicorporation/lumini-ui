@@ -78,7 +78,7 @@ const IndexPage = () => (
         <div className="paragraph">
           <p>
             <strong>
-              Additional patents may be pending in the U.S. and elsewhere.
+              Additional patents may be pending in the U.S. and elsewhere
             </strong>
           </p>
           <p>
