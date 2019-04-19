@@ -8,7 +8,7 @@ export const PatentsQuery = ({ render }) => {
     <StaticQuery
       query={graphql`
         query PatentsQuery {
-          allPatentsJson {
+          allPatentsJson(sort: { order: ASC, fields: [position] }) {
             edges {
               node {
                 id
