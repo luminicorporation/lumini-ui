@@ -3,29 +3,26 @@ import React from 'react';
 
 import { ExternalAnchor } from './common/anchor';
 import { PatentsQuery } from '../queries/PatentsQuery';
-import fbiAntiPiracyLogo from '../images/fbi-anti-piracy.png';
 import '../styles/patents.scss';
 
 export const Patents = () => (
   <PatentsQuery
-    render={data => (
-      <>
-        {data.allPatentsJson.edges.map(({ node: patent }) => (
-          <div className="patent" key={patent.id} id={patent.id}>
-            <p>
-              <strong>
-                <ExternalAnchor key={patent.id} href={patent.href}>
-                  {patent.name}
-                </ExternalAnchor>
-              </strong>
-            </p>
-            <img
-              srcSet={patent.image.src.childImageSharp.fluid.srcSet}
-              alt={patent.image.name}
-            />
-          </div>
-        ))}
-      </>
-    )}
+    render={data =>
+      data.allPatentsJson.edges.map(({ node: patent }) => (
+        <div className="patent" key={patent.id} id={patent.id}>
+          <p>
+            <strong>
+              <ExternalAnchor key={patent.id} href={patent.href}>
+                {patent.name}
+              </ExternalAnchor>
+            </strong>
+          </p>
+          <img
+            srcSet={patent.image.src.childImageSharp.fluid.srcSet}
+            alt={patent.image.name}
+          />
+        </div>
+      ))
+    }
   />
 );
