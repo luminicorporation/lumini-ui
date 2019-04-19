@@ -12,6 +12,32 @@ import '../styles/index.scss';
 
 const NoWrap = p => <span style={{ whiteSpace: 'nowrap' }}>{p.children}</span>;
 
+const ContentSplit = ({ children }) => (
+  <article
+    css={css`
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    `}
+  >
+    {children}
+  </article>
+);
+
+const ContentRight = ({ children }) => (
+  <article
+    css={css`
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-start;
+    `}
+  >
+    {children}
+  </article>
+);
+
 const IndexPage = () => (
   <Layout>
     <Content>
@@ -21,14 +47,7 @@ const IndexPage = () => (
         <br /> Corporation
       </h1>
       <hr className="horizontal-separator" />
-      <article
-        css={css`
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: flex-start;
-        `}
-      >
+      <ContentSplit>
         <GreaterThanCaret />
         <div className="paragraph">
           <p>
@@ -52,10 +71,14 @@ const IndexPage = () => (
             .
           </p>
           <p>A Nils Forsblom Research Company.</p>
-          <hr className="horizontal-separator" />
+        </div>
+      </ContentSplit>
+      <hr className="horizontal-separator" />
+      <ContentRight>
+        <div className="paragraph">
           <Patents />
         </div>
-      </article>
+      </ContentRight>
     </Content>
   </Layout>
 );

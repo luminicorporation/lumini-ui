@@ -14,16 +14,6 @@ export const Patents = () => {
     <PatentsQuery
       render={data => (
         <>
-          <p className="patent-ids">
-            <b>Protected by U.S. Patents</b>:{' '}
-            {data.allPatentsJson.edges.map(({ node: patent }) => (
-              <span key={patent.id}>
-                <ExternalAnchor title={patent.name} href={patent.href}>
-                  {patent.id}
-                </ExternalAnchor>
-              </span>
-            ))}
-          </p>
           <p>Additional patents may be pending in the U.S. and elsewhere.</p>
           <p>
             To find out more about patent licensing, email{' '}
