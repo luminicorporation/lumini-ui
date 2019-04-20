@@ -4,7 +4,7 @@
 
 ### Adding new patents
 
-See this PR: as an example of how to add new patents.
+See PR https://github.com/luminicorporation/lumini-ui/pull/6 as an example of how to add new patents.
 
 Note: To download the jpg image, go into "images" from the patent link provided by Nils, hit download button to download the PDF, then open the PDF using Adobe Acrobat and right click on the image, then save as jpg.
 
