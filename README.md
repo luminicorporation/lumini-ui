@@ -1,6 +1,18 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1ebc4d83-6bb7-4df9-8517-1aad72b378da/deploy-status)](https://app.netlify.com/sites/lumini/deploys)
 
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+## Tips
+
+### Adding new patents
+
+See PR https://github.com/luminicorporation/lumini-ui/pull/6 as an example of how to add new patents.
+
+Note: To download the jpg image, go into "images" from the patent link provided by Nils, hit download button to download the PDF, then open the PDF using Adobe Acrobat and right click on the image, then save as jpg.
+
+## Docs
+
+<details><summary>AUTO-GENERATED-CONTENT:START (STARTER)</summary>
+<p>
+
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
@@ -97,3 +109,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+</p>
+</details>
