@@ -40,15 +40,18 @@ function SEO({ description, lang, meta, keywords, title }) {
   );
 
   const socialMediaCardSrc = `${siteUrl}/${socialMediaCard}`;
-  const metaSiteTitle = title !== 'Home' ? `${siteName} | ${title}` : siteName;
+  const metaSiteTitle =
+    title !== 'Home'
+      ? `${siteName} - ${title}`
+      : `${siteName} - A Nils Forsblom Research Company`;
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={metaSiteTitle}
-      // titleTemplate={`%s | ${siteName}`}
+      title={title !== 'Home' ? title : 'A Nils Forsblom Research Company'}
+      titleTemplate={`${siteName} - %s`}
       meta={[
         { name: `description`, content: metaDescription },
         // Open Graph Card
