@@ -47,8 +47,8 @@ function SEO({ description, lang, meta, keywords, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${siteName}`}
+      title={metaSiteTitle}
+      // titleTemplate={`%s | ${siteName}`}
       meta={[
         { name: `description`, content: metaDescription },
         // Open Graph Card
