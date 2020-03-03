@@ -258,5 +258,15 @@
       "name": "Patent D752062",
       "src": "../images/patents/D752062.jpg"
     }
+  },
+  {
+    "position": "0210",
+    "id": "2014800718710",
+    "href": "http://epub.cnipa.gov.cn/certifdesc.action?strWhere=CN106030638B",
+    "name": "Motion and Gesture-Based Mobile Advertising Activation - Patent China ZL 2014800718710",
+    "image": {
+      "name": "Patent 2014800718710",
+      "src": "../images/patents/2014800718710.jpeg"
+    }
   }
 ]
