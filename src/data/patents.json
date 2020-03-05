@@ -322,5 +322,18 @@
       "name": "Patent 2014800718710",
       "src": "../images/patents/2014800718710.jpeg"
     }
+  },
+  {
+    "position": "0220",
+    "id": "11201604852Q",
+    "name": "Motion and Gesture-Based Mobile Advertising Activation - Patent Singapore 11201604852Q",
+    "image": {
+      "name": "Patent 11201604852Q",
+      "src": "../images/patents/11201604852Q.jpg"
+    },
+    "anchorProps": {
+      "href": "#11201604852Q",
+      "target": ""
+    }
   }
 ]
