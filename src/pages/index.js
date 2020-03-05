@@ -10,7 +10,7 @@ import { ExternalAnchor } from '../components/common/anchor';
 import { Patents } from '../components/patents';
 import '../styles/index.scss';
 
-const NoWrap = p => <span style={{ whiteSpace: 'nowrap' }}>{p.children}</span>;
+// const NoWrap = p => <span style={{ whiteSpace: 'nowrap' }}>{p.children}</span>;
 
 const ContentSplit = ({ children }) => (
   <article
@@ -54,9 +54,22 @@ const IndexPage = () => (
             <strong>Lumini Research</strong>
           </p>
           <p>
-            Theoretical science research for advanced computing. We are
-            developing foundational technologies, applying new thinking for{' '}
-            <NoWrap>near-future</NoWrap> applications.
+            Theoretical research for advanced computing. We are developing
+            foundational technologies, applying new thinking for near-future
+            applications. The research is focused on "mobile consciousness"
+            which explores similarities to human sensory, transitional
+            perception, conditional, and temporal experience of spatial
+            awareness.
+          </p>
+          <p>
+            The boundaries and axioms introduce logic and reasoning and
+            decisions can be designed: either Inductive or Deductive. Accentuate
+            the interplay of either singular or multi-computational spaces.
+            Always changing, never the same.
+          </p>
+          <p>
+            We are developing interventions that alter the physical frame as
+            containment.
           </p>
           <p>
             Advancing key research areas: Mobile computing, Camera computing,
