@@ -1,5 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
+import { isNil } from 'lodash';
 
 import '../../styles/anchor.scss';
 
@@ -12,7 +13,7 @@ export const Anchor = ({ children, className, ...props }) => (
 export const ExternalAnchor = ({ children, className, target, ...props }) => (
   <Anchor
     className={cx('anchor anchor--external', className)}
-    target={target === null ? '_blank' : target}
+    target={isNil(target) ? '_blank' : target}
     rel="noopener noreferrer"
     {...props}
   >
