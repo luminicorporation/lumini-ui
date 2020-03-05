@@ -13,7 +13,10 @@ export const PatentsQuery = ({ render }) => {
               node {
                 id
                 name
-                href
+                anchorProps {
+                  href
+                  target
+                }
                 image {
                   name
                   src {

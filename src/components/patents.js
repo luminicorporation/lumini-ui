@@ -22,7 +22,7 @@ export const Patents = () => (
           <div className="patent" key={patent.id} id={patent.id}>
             <p>
               <strong>
-                <ExternalAnchor key={patent.id} href={patent.href}>
+                <ExternalAnchor {...patent.anchorProps}>
                   {patent.name}
                 </ExternalAnchor>
               </strong>
